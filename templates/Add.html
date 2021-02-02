@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Add User</title>
+    </head>
+    <body>
+        <div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                <br>
+                {{ form.First_name.label }} {{ form.First_name }}
+                <br>
+                {{ form.Last_name.label }} {{ form.Last_name }}
+                <br>
+                {{ form.Age.label }} {{ form.Age }}
+                <br>
+                {{ form.Location.label }} {{ form.Location }}
+                <br>
+                {{ form.Email.label }} {{ form.Email }}
+                <br>
+                {{ form.submit }}
+            {{ message }}
+            </form>
+        </div>
+    </body>
+</html>
